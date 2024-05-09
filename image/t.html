@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        /* Additional CSS styles for animations and slider */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .gallery-images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .gallery-images img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .gallery-images img:hover {
+            transform: scale(1.1);
+        }
+
+        .container:hover .gallery-images img {
+            transform: scale(1);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+        }
+
+        /* Animation for fade-in effect */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <span>Gallery</span>
+        <a href="contact.html">Contact Us</a>
+    </div>
+
+    <div class="container">
+        <h1>Gallery</h1>
+
+        <div class="section">
+            <h2>Featured Images</h2>
+            <p>Explore our featured images.</p>
+            <div class="gallery-images">
+                <img src="pexels-photo-10015425.webp" alt="Image 1">
+                <img src="pexels-photo-904355.jpeg" alt="Image 2">
+                <img src="shutterstock_124871620.webp" alt="Image 3">
+                <img src="L2R4856-1366x768.jpg" alt="Image 4">
+                <img src="delhi.png" alt="Image 5">
+                <img src="image/a6.jpg" alt="Image 6">
+                <img src="image/a7.jpg" alt="Image 7">
+                <img src="image/a8.jpg" alt="Image 8">
+                <img src="image/a9.jpg" alt="Image 9">
+                <img src="image/a10.jpg" alt="Image 10">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Popular Categories</h2>
+            <p>Check out our popular categories.</p>
+            <div class="gallery-images">
+                <img src="image/a1.jpg" alt="Category 1">
+                <img src="image/a2.jpg" alt="Category 2">
+                <img src="image/a3.jpg" alt="Category 3">
+                <img src="image/a4.jpg" alt="Category 4">
+                <img src="image/a5.jpg" alt="Category 5">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Recent Additions</h2>
+            <p>Discover our latest additions.</p>
+            <div class="gallery-images">
+                <img src="image/a11.jpg" alt="Recent 1">
+                <img src="image/a12.jpg" alt="Recent 2">
+                <img src="image/a13.jpg" alt="Recent 3">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Gallery</p>
+    </div>
+</body>
+</html>
